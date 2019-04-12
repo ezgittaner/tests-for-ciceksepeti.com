@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-04-12T10:57:57Z" name="NegativeLogInTestSuite" finished-at="2019-04-12T10:58:14Z" duration-ms="17128">
+    <groups>
+    </groups>
+    <test started-at="2019-04-12T10:57:57Z" name="NegativeTest-CH" finished-at="2019-04-12T10:58:14Z" duration-ms="17128">
+      <class name="com.ciceksepeti.logInTest.NegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.ciceksepeti.logInTest.NegativeTest@192c3f1e]" started-at="2019-04-12T10:57:57Z" name="setUp" finished-at="2019-04-12T10:58:03Z" duration-ms="6228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5ace1ed4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeTest(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.ciceksepeti.logInTest.NegativeTest@192c3f1e]" started-at="2019-04-12T10:58:03Z" name="negativeTest" finished-at="2019-04-12T10:58:14Z" duration-ms="10697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrectusername@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperSecretPassword!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mail adresi veya şifre hatalı.Lütfen bilgilerinizi kontrol edip tekrar deneyin.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ciceksepeti.logInTest.NegativeTest@192c3f1e]" started-at="2019-04-12T10:58:14Z" name="tearDown" finished-at="2019-04-12T10:58:14Z" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ciceksepeti.logInTest.NegativeTest -->
+    </test> <!-- NegativeTest-CH -->
+  </suite> <!-- NegativeLogInTestSuite -->
+</testng-results>

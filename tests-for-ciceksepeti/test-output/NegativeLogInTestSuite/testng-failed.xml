@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [NegativeLogInTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="NegativeTest-CH(failed)">
+    <parameter name="password" value="SuperSecretPassword!"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="expectedMessage" value="Mail adresi veya şifre hatalı.Lütfen bilgilerinizi kontrol edip tekrar deneyin."/>
+    <parameter name="username" value="incorrectusername@gmail.com"/>
+    <classes>
+      <class name="com.ciceksepeti.logInTest.NegativeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="negativeTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ciceksepeti.logInTest.NegativeTest -->
+    </classes>
+  </test> <!-- NegativeTest-CH(failed) -->
+</suite> <!-- Failed suite [NegativeLogInTestSuite] -->
