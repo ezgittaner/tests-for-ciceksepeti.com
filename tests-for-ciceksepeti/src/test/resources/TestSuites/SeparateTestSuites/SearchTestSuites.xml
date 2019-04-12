@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchTestSuite" verbose="1" parallel="tests" thread-count="1">
+
+	<test name="SearchTest-CH">
+		<parameter name="flowername" value="ORKİDE"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.ciceksepeti.searchTest.SearchTest">
+			</class>
+		</classes>
+	</test>
+	
+
+</suite>

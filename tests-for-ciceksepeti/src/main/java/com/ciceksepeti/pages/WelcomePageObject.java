@@ -15,6 +15,9 @@ public class WelcomePageObject extends BasePageObject {
 			"body > div.header > div.container > div > div.header__right-col > div.user-menu-container.js-user-menu > nav > ul > li:nth-child(2) > div > div > ul > li:nth-child(1) > a");
 	private By close = By.cssSelector(
 			"body > main > div > div.subheader.js-subheader > div.subheader__district.js-district-wrapper.is-active.subheader__district-full > div.subheader-close.js-subheader-close.is-hidden > a > span");
+	private By search = By.cssSelector("#product-search-1 > input");
+	private By searchButton = By
+			.cssSelector("#product-search-1 > button > span.icon.icon-search.product-search__button-icon");
 
 	public WelcomePageObject(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -48,4 +51,16 @@ public class WelcomePageObject extends BasePageObject {
 		return new WelcomePageObject(driver, log);
 	}
 
+	/** click on search Link */
+	public WelcomePageObject clicksearchLink() {
+		log.info("Clicking search link on Welcome Page");
+		click(search);
+		return new WelcomePageObject(driver, log);
+	}
+
+	public void searchFlower(String flowername) {
+
+		type(flowername, search);
+		click(searchButton);
+	}
 }
